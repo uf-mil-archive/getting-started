@@ -1,5 +1,7 @@
 If anything is unclear or you run a problem following this tutorial, submit a bug report using the issue tracker on this page.
 
+Request to join the mailing list at https://groups.google.com/d/forum/uf-mil-software .
+
 1. Install Ubuntu
 -----------------
 
