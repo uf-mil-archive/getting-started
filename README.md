@@ -36,3 +36,12 @@ Read the README in each of the ROS package repositories at https://github.com/uf
 ------------------
 
     catkin_make -C ~/catkin_ws
+
+This command should complete without any errors if everything works.
+
+7. Complete
+-----------
+
+At this point, you can try running the SubjuGator simulator with:
+
+    rosrun subsim sim
