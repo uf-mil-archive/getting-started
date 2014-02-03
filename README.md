@@ -22,6 +22,12 @@ Follow all the instructions at http://wiki.ros.org/hydro/Installation/Ubuntu .
 
 Follow all the instructions at http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment .
 
+The linked tutorial omits this, but you have to add the following to your
+`.bashrc`, after `source /opt/ros/hydro/setup.bash` (which was added during
+the tutorial) in order to finish setting up your workspace:
+
+    source ~/catkin_ws/devel/setup.bash
+
 4. Install required packages and add required repositories
 ----------------------------------------------------------
 
