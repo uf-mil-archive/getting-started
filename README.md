@@ -53,6 +53,9 @@ This command should complete without any errors if everything works.
 7. Complete
 -----------
 
-At this point, you can try running the SubjuGator simulator with:
+At this point, you can start a roscore and try running the SubjuGator simulator with:
 
+    roscore &
     rosrun subsim sim
+
+The simulator's user interface isn't currently documented (though that should change very soon), so you'll have to either try pressing keys or look at the source. One hint: Pressing TAB enables FPS camera mode.
