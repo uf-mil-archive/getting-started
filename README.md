@@ -1,5 +1,5 @@
 Before you start, request to join the mailing list at 
-https://groups.google.com/d/forum/uf-mil-software .
+https://groups.google.com/d/forum/uf-mil-software.
 
 If anything is unclear or you run into a problem following this tutorial, ask 
 a question on the mailing list. If you find a problem with this 
@@ -18,13 +18,13 @@ problems with 3D graphics.
 2. Install ROS Hydro
 --------------------
 
-Follow all the instructions at http://wiki.ros.org/hydro/Installation/Ubuntu .
+Follow all the instructions at http://wiki.ros.org/hydro/Installation/Ubuntu.
 
 3. Make workspace
 -----------------
 
 Follow all the instructions at 
-http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment .
+http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment.
 
 The linked tutorial omits this, but you have to add the following to your
 `.bashrc`, after `source /opt/ros/hydro/setup.bash` (which was added during
@@ -36,7 +36,7 @@ the tutorial) in order to finish setting up your workspace:
 ----------------------------------------------------------
 
 Read the README in each of the ROS package repositories at 
-https://github.com/uf-mil .
+https://github.com/uf-mil.
 
 5. Add uf-mil repositories
 --------------------------
