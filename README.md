@@ -59,3 +59,9 @@ At this point, you can start a roscore and try running the SubjuGator simulator 
     rosrun subsim sim
 
 The simulator's user interface isn't currently documented (though that should change very soon), so you'll have to either try pressing keys or look at the source. One hint: Pressing TAB enables FPS camera mode.
+
+
+Updating uf-mil repositories
+----------------------------
+
+Go in each directory within `~/catkin_ws/src/uf_mil` and type `git pull`.
