@@ -8,7 +8,7 @@ documentation, submit a bug report using the issue tracker on this page.
 1. Install Ubuntu
 -----------------
 
-Supported versions of Ubuntu: 12.04, 12.10, 13.04 (64-bit strongly recommended).
+Supported versions of Ubuntu: 12.10, 13.04 (64-bit strongly recommended).
 
 Download a CD image from http://releases.ubuntu.com/
 
