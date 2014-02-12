@@ -32,6 +32,9 @@ the tutorial) in order to finish setting up your workspace:
 
     source ~/catkin_ws/devel/setup.bash
 
+After adding those lines to your `.bashrc` file, open a new shell so the
+settings take effect.
+
 4. Install required packages and add required repositories
 ----------------------------------------------------------
 
