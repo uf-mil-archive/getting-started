@@ -8,17 +8,21 @@ documentation, submit a bug report using the issue tracker on this page.
 1. Install Ubuntu
 -----------------
 
-Supported versions of Ubuntu: 12.10, 13.04 (64-bit strongly recommended).
+Only Ubuntu 13.04 is supported. The 64-bit version is strongly recommended.
 
-Download a CD image from http://releases.ubuntu.com/
+Upgrade an existing install of Ubuntu or download a CD image from 
+http://releases.ubuntu.com/raring/.
 
-Using a VM is not recommended - it requires a much more powerful system and causes 
-problems with 3D graphics.
+Using a VM is not recommended - it requires a much more powerful system 
+and causes problems with 3D graphics.
 
 2. Install ROS Hydro
 --------------------
 
-Follow all the instructions at http://wiki.ros.org/hydro/Installation/Ubuntu.
+Follow all the instructions at 
+http://wiki.ros.org/hydro/Installation/Ubuntu. Make sure to do the 
+"Desktop-Full Install," as opposed to the "Desktop Install" or 
+"ROS-Base."
 
 3. Make workspace
 -----------------
@@ -67,4 +71,5 @@ The simulator's user interface isn't currently documented (though that should ch
 Updating uf-mil repositories
 ----------------------------
 
-Go in each directory within `~/catkin_ws/src/uf_mil` and type `git pull`.
+Go in each directory within `~/catkin_ws/src/uf_mil` and type `git 
+pull`. After that, recompile by running `catkin_make -C ~/catkin_ws`.
