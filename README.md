@@ -45,6 +45,15 @@ settings take effect.
 Read the README in each of the ROS package repositories at 
 https://github.com/uf-mil.
 
+1. https://github.com/uf-mil/rawgps-tools
+2. https://github.com/uf-mil/software-common
+3. https://github.com/uf-mil/hardware-common
+4. https://github.com/uf-mil/SubjuGator
+5. https://github.com/uf-mil/PropaGator
+
+The repositories have several dependencies and provide the commands
+you need to run to install them.
+
 5. Add uf-mil repositories
 --------------------------
 
