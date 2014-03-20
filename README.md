@@ -81,5 +81,5 @@ The simulator's user interface isn't currently documented (though that should ch
 Updating uf-mil repositories
 ----------------------------
 
-Go in each directory within `~/catkin_ws/src/uf_mil` and type `git 
+Go in each directory within `~/catkin_ws/src/uf-mil` and type `git 
 pull`. After that, recompile by running `catkin_make -C ~/catkin_ws`.
