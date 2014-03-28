@@ -1,6 +1,9 @@
-Before you start, request to join the mailing list at 
-https://groups.google.com/d/forum/uf-mil-software and put your possible
-meeting times in the poll at http://doodle.com/ybg6sq5vyyat77hv.
+Before you start, request to join the
+[mailing list](https://groups.google.com/d/forum/uf-mil-software),
+put your possible meeting times in the
+[poll](http://doodle.com/ybg6sq5vyyat77hv),
+and request access to the
+[to-do list](https://docs.google.com/document/d/1cZwCfnEqv9jpzpVE7uA_qp4BQ_Zcb403iAPRucudExM/edit?usp=sharing).
 
 If anything is unclear or you run into a problem following this tutorial, ask 
 a question on the mailing list. If you find a problem with this 
