@@ -81,6 +81,8 @@ At this point, you can start a roscore and try running the SubjuGator simulator 
 The simulator's user interface is documented in the README file in
 its package directory.
 
+Look at the to-do list (linked at the top) to find something to work on.
+
 
 Updating uf-mil repositories
 ----------------------------
