@@ -78,7 +78,8 @@ At this point, you can start a roscore and try running the SubjuGator simulator 
     roscore &
     rosrun subsim sim
 
-The simulator's user interface isn't currently documented (though that should change very soon), so you'll have to either try pressing keys or look at the source. One hint: Pressing TAB enables FPS camera mode.
+The simulator's user interface is documented in the README file in
+its package directory.
 
 
 Updating uf-mil repositories
