@@ -1,0 +1,63 @@
+start ros main - roscore &
+start simulator - rosrun subsim sim
+start software stack - roslaunch subsim run.launch
+
+
+send waypoints - 
+- alias wp="rosrun sub_launch send_waypoint"
+- alias k="rosrun kill_handling kill"
+- wp direction(forward, raise, depth, left, right) magnitude
+
+
+show forward camera - rosrun image_view image_view image:=forward_camera/image_rect_color
+rosrun image_view image_view image:=image_raw
+record video rosbag from front - rosbag record -O #NAME_OF_VIDEO# /forward_camera/image_rect_color
+record video rosbag from boat - rosbag record -O #NAME_OF_VIDEO /image_raw
+play rosbag video - rosbag play #NAME_OF_VIDEO#.bag
+start boatsim - roslaunch boatsim run.launch
+
+
+Magnetic Calibration
+Kill the submarine (by pressing 1)
+Start recording raw magnetic data (rosbag record /imu/mag_raw)
+Rotate the submarine, sampling every possible rotation (look at subsim's README.md)
+Stop recording (press Ctrl-c on rosbag)
+Generate the calibration result (rosrun magnetic_hardsoft_compensation generate_config NAME_OF_THE_BAG_FILE_YOU_PRODUCED). Make sure that the points cover the entire sphere. If they don't, re-record the data. Close the window.
+Paste the generated configuration (the last 5 lines of output after closing the window) into sub_launch/launch/common.xml, replacing the similar 5 lines that are already there.
+Stop and restart the main "roslaunch subsim run.launch" process to load the new configuration.
+
+
+
+
+boat startup
+roscore &
+roslaunch propagator_motor_driver start_motor_driver.launch
+rosrun thruster_mapper thruster_mapper
+rosrun thruster_mapper joy_to_wrench joy:=spacenav/joy
+
+
+
+camera
+rosrun image_view image_view image:=image_raw/
+
+run camera
+rosrun ueye2 ueye2
+
+rqt_graph //shows graph allows user to become acquainted with the system
+
+forest fix tests
+rostopic echo /gps
+rostopic echo /odom
+rostopic echo /trajectory
+git stash
+git pull /home/fvoight/catkin_ws/src/uf-mil/PropaGator
+
+roslaunch boat_launch navigation.launch //gps takes a bit to synch so leave running
+roslaunch boat_launch run.launch
+rosrun sub_launch send_waypoint direction magnitude
+
+manual edit calibration: pd_controller.py
+
+
+
+
