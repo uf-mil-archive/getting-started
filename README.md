@@ -61,7 +61,7 @@ you need to run to install them.
 5. Add uf-mil repositories
 --------------------------
 
-    roscd && cd ../src && mkdir uf-mil && cd uf-mil && for A in rawgps-tools software-common hardware-common SubjuGator PropaGator ; do git clone https://github.com/uf-mil/$A.git ; done
+    roscd && cd ../src && mkdir uf-mil && cd uf-mil && for A in rawgps-tools software-common hardware-common SubjuGator PropaGator ; do git clone https://github.com/uf-mil/$A.git ; git clone https://github.com/txros/txros.git ; done
 
 6. Run catkin_make
 ------------------
