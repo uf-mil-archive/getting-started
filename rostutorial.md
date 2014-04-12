@@ -88,10 +88,14 @@ Press 2 to reactivate sub.
 
 Redo the the path.py script with the "reef" object (a box with a blinking pinger under it). Try with different camera views.
 
------------Motor-------------- 
+Motor
+----- 
+
 manual edit calibration: pd_controller.py
 
-----------Camera--------------
+Camera
+------
+
 -run camera
 
     rosrun ueye2 ueye2
@@ -112,26 +116,34 @@ play rosbag video -
 
     rosbag play #NAME_OF_VIDEO#.bag
 
------Magnetic Calibration-----
-Kill the submarine (by pressing 1)
-Start recording raw magnetic data (rosbag record /imu/mag_raw)
-Rotate the submarine, sampling every possible rotation (look at subsim's README.md)
-Stop recording (press Ctrl-c on rosbag)
-Generate the calibration result (rosrun magnetic_hardsoft_compensation generate_config NAME_OF_THE_BAG_FILE_YOU_PRODUCED). Make sure that the points cover the entire sphere. If they don't, re-record the data. Close the window.
-Paste the generated configuration (the last 5 lines of output after closing the window) into sub_launch/launch/common.xml, replacing the similar 5 lines that are already there.
-Stop and restart the main "roslaunch subsim run.launch" process to load the new configuration.
+Magnetic Calibration
+--------------------
 
------Display info tests-------
+<ul>
+<li>Kill the submarine (by pressing 1)</li>
+<li>Start recording raw magnetic data (rosbag record /imu/mag_raw)</li>
+<li>Rotate the submarine, sampling every possible rotation (look at subsim's README.md)</li>
+<li>Stop recording (press Ctrl-c on rosbag)</li>
+<li>Generate the calibration result (rosrun magnetic_hardsoft_compensation generate_config NAME_OF_THE_BAG_FILE_YOU_PRODUCED). Make sure that the points cover the entire sphere. If they don't, re-record the data. Close the window.</li>
+<li>Paste the generated configuration (the last 5 lines of output after closing the window) into sub_launch/launch/common.xml, replacing the similar 5 lines that are already there.</li>
+<li>Stop and restart the main "roslaunch subsim run.launch" process to load the new configuration.</li>
+</ul>
+Display info tests
+------------------
 
     rostopic echo /gps
     rostopic echo /odom
     rostopic echo /trajectory
 
----Getting Used to System-----
+Getting Used to System
+----------------------
+
 NAVIGATE THROUGH IT - check what is executable, compare it with some of the commands in this file, try some stuff out that you think is convuluted or obtuse
 `rqt_graph` //shows graph allows user to become acquainted with the system
 
----------Git------------------
+Git
+---
+
 How to use git:
 git clone repositoryurl - CLONES a repository into your file directory at the current location `git clone https://github.com/rzavo76/getting-started.git` 
 git init nameofdirOrRepositoryUrl - MAKES a repository linked to the directory or URL
@@ -169,7 +181,7 @@ Make Models for Simulator
 -------------------------
 
 Can choose object or edit mode based on the bottom tab
--------Controls------
+#### Controls ####
 hold middle mouse button - turn camera
 scroll middle mouse button - zoom in/out
 'b' then click and drag - select specific edges or vertices
@@ -181,25 +193,26 @@ scroll middle mouse button - zoom in/out
 'r' - rotate (x, y, z)
 'x' - delete selected object
 
---------Panels-------
+#### Panels ####
 'n' - opens transform panel to move the selected object based on coord
 in edit mode use subdivide on the left panel to allow more locations of movement on a line
 common to delete different vertices to leave a line and then create a vertical plane afterwards using subdivice on points
 
-------Making Model---
-1. Delete default block
-2. Consider a spatial method to easily deconstruct the object you are creating (ex. make a single plane and rotate or add default shapes)
-3. Add an object that you can easily deconstruct
-4. Set imperial units under scene on the right panel (this changes the grid)
-5. Deconstruct the shape or add more objects
-6. move vertices to specific locations of merit(subdivide to get more points)
-7. Rotate or ascribe more dimension to the object
-8. Render image to see how the object will look
-9. save as a blend file
-10. export as an obj file - click triangulate faces - change forward to y forward
-
---Uploading To World--
-upload by finding the file through
+#### Making Model ####
+<ol>
+<li>Delete default block</li>
+<li>Consider a spatial method to easily deconstruct the object you are creating (ex. make a single plane and rotate or add default shapes)</li>
+<li>Add an object that you can easily deconstruct</li>
+<li>Set imperial units under scene on the right panel (this changes the grid)</li>
+<li>Deconstruct the shape or add more objects</li>
+<li>Move vertices to specific locations of merit(subdivide to get more points)</li>
+<li>Rotate or ascribe more dimension to the object</li>
+<li>Render image to see how the object will look</li>
+<li>Save as a blend file</li>
+<li>Export as an obj file - click triangulate faces - change forward to y forward</li>
+</ol>
+#### Uploading To World ####
+Upload by finding the file through
 
     roscd boatsim
     cd scripts
