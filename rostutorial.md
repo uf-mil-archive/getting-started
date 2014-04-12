@@ -1,5 +1,5 @@
-ROS System Tutorial
-	Made by Ryan Zavoral
+ROS System Tutorial  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Made by Ryan Zavoral
 
 Start Sub
 ---------
@@ -37,16 +37,16 @@ Boat Startup (for 3d mouse)
 Waypoints Boat 
 --------------
 
---gps takes a bit to synch so leave running
+Gps takes a bit to synch so leave running
 
-    roslaunch boat_launch navigation.launch 
---runs software stack and motors (basically everything, runs some stuff from line 42)
+    roslaunch boat_launch navigation.launch  
+Runs software stack and motors (basically everything, runs some stuff from line 42)
 
     roslaunch boat_launch run.launch 
-From file - /sub_launch/scripts/send_waypoint (this is an executable)
-'send_waypoint forward 5 --speed .2'
-'send_waypoint set_orientation NORTH'
-'send_waypoint yaw_left_deg 30'
+From file - /sub_launch/scripts/send_waypoint (this is an executable)  
+'send_waypoint forward 5 --speed .2'  
+'send_waypoint set_orientation NORTH'  
+'send_waypoint yaw_left_deg 30'  
 
 Waypoint Aliases
 ----------------
@@ -76,14 +76,14 @@ After creating your own,
     
     catkin_make -C ~/catkin_ws 
     rosrun mission_core run_mission sub_launch.mission.<your mission>
-There is also a path.py mission. To run do the following:
-Kill the sub by pressing 1. 
-Start the down cameras with:
+There is also a path.py mission. To run do the following:  
+Kill the sub by pressing 1.   
+Start the down cameras with:  
 
     rosrun sub_launch camera_views down
     rosrun sub_launch legacy_debug_images down.
-Use i-j-k-l keys to position the sub over the pipe. 
-Press 2 to reactivate sub. 
+Use i-j-k-l keys to position the sub over the pipe.   
+Press 2 to reactivate sub.  
     rosrun mission_core run_missions sub_launch.missions.path 
 
 Redo the the path.py script with the "reef" object (a box with a blinking pinger under it). Try with different camera views.
@@ -96,15 +96,15 @@ manual edit calibration: pd_controller.py
 Camera
 ------
 
--run camera
+Run camera
 
     rosrun ueye2 ueye2
-show forward camera -
+Show forward camera -
 
     rosrun image_view image_view image:=(output device)
--CHOOSE ONE OF THE FOLLOWING AT THIS POINT (More output devices exist so we need to find their names so that they may be accessed) 
-output device1 = forward_camera/image_rect_color
-output device2 = image_raw/
+CHOOSE ONE OF THE FOLLOWING AT THIS POINT (More output devices exist so we need to find their names so that they may be accessed)  
+output device1 = forward_camera/image_rect_color  
+output device2 = image_raw/  
 
 record video rosbag from front - 
 
@@ -138,30 +138,35 @@ Display info tests
 Getting Used to System
 ----------------------
 
-NAVIGATE THROUGH IT - check what is executable, compare it with some of the commands in this file, try some stuff out that you think is convuluted or obtuse
-`rqt_graph` //shows graph allows user to become acquainted with the system
+NAVIGATE THROUGH IT - check what is executable, compare it with some of the commands in this file, try some stuff out that you think is convuluted or obtuse  
+`rqt_graph` shows graph allows user to become acquainted with the system  
 
 Git
 ---
 
-How to use git:
-git clone repositoryurl - CLONES a repository into your file directory at the current location `git clone https://github.com/rzavo76/getting-started.git` 
-git init nameofdirOrRepositoryUrl - MAKES a repository linked to the directory or URL
---I recommend using the URL to link instead of the directory when making a new repository
---So the repository should be initialized via the github site before hand
-`git pull` - PULLS updates to the cloned or initiated repository at your current location
+##### How to Use Git #####
+`git clone repositoryurl` CLONES a repository into your file directory at the current location 
 
-after forking a repository to your github pages ---    
+    git clone https://github.com/rzavo76/getting-started.git
+
+`git init nameofdirOrRepositoryUrl` MAKES a repository linked to the directory or URL  
+<ul>
+<li>I recommend using the URL to link instead of the directory when making a new repository</li>
+<li>So the repository should be initialized via the github site before hand</li>
+</ul>
+`git pull` PULLS updates to the cloned or initiated repository at your current location
+
+##### After Forking Repository to Git #####
     
     git add fileName 
     git commit -m"message"
     git push URLOfGitFork 
 
-- pushes a specific file to your repository, add more files to the add if necessary
-Then send a commit request via your github site at the forked repository
-Someone should allow the request soon after.
+Pushes a specific file to your repository, add more files if necessary  
+Then send a commit request via your github site at the forked repository  
+Someone should allow the request soon after.  
 
-If command below doesnt work - 
+##### If Command Below Doesn't Work #####
 
     git stash
     git pull /home/fvoight/catkin_ws/src/uf-mil/PropaGator
@@ -194,9 +199,9 @@ scroll middle mouse button - zoom in/out
 'x' - delete selected object
 
 #### Panels ####
-'n' - opens transform panel to move the selected object based on coord
-in edit mode use subdivide on the left panel to allow more locations of movement on a line
-common to delete different vertices to leave a line and then create a vertical plane afterwards using subdivice on points
+'n' - opens transform panel to move the selected object based on coord  
+in edit mode use subdivide on the left panel to allow more locations of movement on a line  
+common to delete different vertices to leave a line and then create a vertical plane afterwards using subdivice on points  
 
 #### Making Model ####
 <ol>
@@ -211,6 +216,7 @@ common to delete different vertices to leave a line and then create a vertical p
 <li>Save as a blend file</li>
 <li>Export as an obj file - click triangulate faces - change forward to y forward</li>
 </ol>
+
 #### Uploading To World ####
 Upload by finding the file through
 
