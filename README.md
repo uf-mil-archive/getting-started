@@ -61,14 +61,21 @@ you need to run to install them.
 5. Add uf-mil repositories
 --------------------------
 
-    roscd && cd ../src && mkdir uf-mil && cd uf-mil && for A in rawgps-tools software-common hardware-common SubjuGator PropaGator ; do git clone https://github.com/uf-mil/$A.git ; done && git clone https://github.com/txros/txros.git
+Run:
+
+    roscd && cd ../src && git clone git@github.com:uf-mil/uf-mil
+
+Then, go into the uf-mil directory and type `./pull` to pull the newest commits.
+
+Add `source ~/catkin_ws/src/uf-mil/bashrc` to the end of ~/.bashrc.
 
 6. Run catkin_make
 ------------------
 
-    catkin_make -C ~/catkin_ws
+    cm
 
-This command should complete without any errors if everything works.
+This command is defined in ~/catkin_ws/src/uf-mil/bashrc and
+should complete without any errors if everything works.
 
 7. Complete
 -----------
@@ -87,5 +94,4 @@ Look at the to-do list (linked at the top) to find something to work on.
 Updating uf-mil repositories
 ----------------------------
 
-Go in each directory within `~/catkin_ws/src/uf-mil` and type `git 
-pull`. After that, recompile by running `catkin_make -C ~/catkin_ws`.
+Go into ~/catkin_ws/src/uf-mil and type `./pull`
