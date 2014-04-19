@@ -70,7 +70,8 @@ add it to your GitHub account.
 
 Then, go into the uf-mil directory and type `./pull` to pull the newest commits.
 
-Add `source ~/catkin_ws/src/uf-mil/bashrc` to the end of ~/.bashrc.
+Add `source ~/catkin_ws/src/uf-mil/bashrc` to the end of ~/.bashrc and open a
+new shell so the settings take effect.
 
 6. Run catkin_make
 ------------------
