@@ -63,7 +63,10 @@ you need to run to install them.
 
 Run:
 
-    roscd && cd ../src && git clone git@github.com:uf-mil/uf-mil
+    roscd && cd ../src && git clone git@github.com:uf-mil/uf-mil.git
+
+If this fails with a "Permission denied" error, you need to create an SSH key and
+add it to your GitHub account.
 
 Then, go into the uf-mil directory and type `./pull` to pull the newest commits.
 
