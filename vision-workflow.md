@@ -18,7 +18,7 @@ as usual.
 Testing vision finders
 ----------------------
 
-    roslaunch legacy_vision camera:=forward_camera
+    roslaunch legacy_vision legacy_vision.launch camera:=forward_camera
     rosrun actionlib axclient.py /find2_forward_camera
 
 (Change "forward" to "down" as appropriate.) Then, change `object_names` to
