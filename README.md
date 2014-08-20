@@ -12,19 +12,20 @@ documentation, submit a bug report using the issue tracker on this page.
 1. Install Ubuntu
 -----------------
 
-Only Ubuntu 13.04 is supported. The 64-bit version is strongly recommended.
+Only Ubuntu 14.04.1 (Trusty) is supported.
+The 64-bit version is strongly recommended.
 
 Upgrade an existing install of Ubuntu or download a CD image from 
-http://releases.ubuntu.com/raring/.
+http://releases.ubuntu.com/trusty/.
 
 Using a VM is not recommended - it requires a much more powerful system 
 and causes problems with 3D graphics.
 
-2. Install ROS Hydro
---------------------
+2. Install ROS Indigo
+---------------------
 
 Follow all the instructions at 
-http://wiki.ros.org/hydro/Installation/Ubuntu. Make sure to do the 
+http://wiki.ros.org/indigo/Installation/Ubuntu. Make sure to do the 
 "Desktop-Full Install," as opposed to the "Desktop Install" or 
 "ROS-Base."
 
@@ -35,7 +36,7 @@ Follow all the instructions at
 http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment.
 
 The linked tutorial omits this, but you have to add the following to your
-`.bashrc`, after `source /opt/ros/hydro/setup.bash` (which was added during
+`.bashrc`, after `source /opt/ros/indigo/setup.bash` (which was added during
 the tutorial) in order to finish setting up your workspace:
 
     source ~/catkin_ws/devel/setup.bash
