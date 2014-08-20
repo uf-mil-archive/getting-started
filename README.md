@@ -47,7 +47,7 @@ settings take effect.
 4. Install required packages and add required repositories
 ----------------------------------------------------------
 
-Read the README in each of the ROS package repositories at 
+Read the `README` in each of the ROS package repositories at 
 https://github.com/uf-mil.
 
 1. https://github.com/uf-mil/rawgps-tools
@@ -71,7 +71,7 @@ add it to your GitHub account.
 
 Then, go into the uf-mil directory and type `./pull` to pull the newest commits.
 
-Add `source ~/catkin_ws/src/uf-mil/bashrc` to the end of ~/.bashrc and open a
+Add `source ~/catkin_ws/src/uf-mil/bashrc` to the end of `~/.bashrc` and open a
 new shell so the settings take effect.
 
 6. Run catkin_make
@@ -79,7 +79,7 @@ new shell so the settings take effect.
 
     cm
 
-This command is defined in ~/catkin_ws/src/uf-mil/bashrc and
+This command is defined in `~/catkin_ws/src/uf-mil/bashrc` and
 should complete without any errors if everything works.
 
 7. Complete
@@ -90,7 +90,7 @@ At this point, you can start a roscore and try running the SubjuGator simulator 
     roscore &
     rosrun subsim sim
 
-The simulator's user interface is documented in the README file in
+The simulator's user interface is documented in the `README` file in
 its package directory.
 
 Look at the to-do list (linked at the top) to find something to work on.
@@ -99,4 +99,4 @@ Look at the to-do list (linked at the top) to find something to work on.
 Updating uf-mil repositories
 ----------------------------
 
-Go into ~/catkin_ws/src/uf-mil and type `./pull`
+Go into `~/catkin_ws/src/uf-mil` and type `./pull`
