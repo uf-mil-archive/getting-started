@@ -95,6 +95,13 @@ its package directory.
 
 Look at the to-do list (linked at the top) to find something to work on.
 
+8. Modemmanager
+---------------
+
+Modemmanager can cause issues with using the usb ports so remove it with the following command:
+
+    sudo apt-get remove modemmanager
+
 
 Updating uf-mil repositories
 ----------------------------
