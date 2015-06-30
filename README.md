@@ -55,6 +55,7 @@ https://github.com/uf-mil.
 3. https://github.com/uf-mil/hardware-common
 4. https://github.com/uf-mil/SubjuGator
 5. https://github.com/uf-mil/PropaGator
+5. https://github.com/txros/txros
 
 The repositories have several dependencies and provide the commands
 you need to run to install them.
