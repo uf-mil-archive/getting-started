@@ -103,6 +103,11 @@ Modemmanager can cause issues with using the usb ports so remove it with the fol
 
     sudo apt-get remove modemmanager
 
+9. gitconfig
+------------
+
+Running `git config --global merge.conflictstyle diff3` before looking at a merge conflict shows the changes relative to the common ancestor, making it possible to resolve conflicts more easily. If you already started a merge, you can run `git merge --abort` to abort it and then try again.
+
 
 Updating uf-mil repositories
 ----------------------------
