@@ -1,4 +1,6 @@
-Before you start, request to join the
+0. Before you start
+-------------------
+request to join the
 [mailing list](https://groups.google.com/d/forum/uf-mil-software),
 put your possible meeting times in the
 [poll](http://doodle.com/ybg6sq5vyyat77hv),
